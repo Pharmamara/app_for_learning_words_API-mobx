@@ -31,7 +31,7 @@ class WordStore {
     try {
       console.log("Fetching words..."); // Лог при вызове
       const response = await fetch(
-        "http://itgirlschool.justmakeit.ru/api/words"
+        "https://itgirlschool.justmakeit.ru/api/words"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch words");
@@ -59,7 +59,7 @@ class WordStore {
   async addWord(newWord) {
     try {
       const response = await fetch(
-        "http://itgirlschool.justmakeit.ru/api/words/add",
+        "https://itgirlschool.justmakeit.ru/api/words/add",
         {
           method: "POST",
 
@@ -78,7 +78,7 @@ class WordStore {
   // Удаление слова
   async deleteWord(id) {
     try {
-      await fetch(`http://itgirlschool.justmakeit.ru/api/words/${id}/delete`, {
+      await fetch(`https://itgirlschool.justmakeit.ru/api/words/${id}/delete`, {
         method: "POST",
       });
       runInAction(() => {
@@ -92,7 +92,7 @@ class WordStore {
   // Изменение слова
   async updateWord(id, updatedWord) {
     try {
-      await fetch(`http://itgirlschool.justmakeit.ru/api/words/${id}/update`, {
+      await fetch(`https://itgirlschool.justmakeit.ru/api/words/${id}/update`, {
         method: "POST",
 
         body: JSON.stringify(updatedWord),

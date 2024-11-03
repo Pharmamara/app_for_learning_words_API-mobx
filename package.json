@@ -1,7 +1,7 @@
 {
   "homepage": "https://pharmamara.github.io/app_for_learning_words_API-mobx/",
   "name": "app_for_learning_words_api",
-  "proxy": "http://itgirlschool.justmakeit.ru",
+  "proxy": "https://itgirlschool.justmakeit.ru",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
